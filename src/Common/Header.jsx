@@ -1,10 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import LOGO from '../Assets/white-logo_png.png';
+
 export default function Header() {
+    const navigate = useNavigate();
+    const goLogin=()=>{navigate('/login');}
+    const goSign =()=>{navigate('/'); }
     return (
         <>
-            <nav class="navbar navbar-expand-lg bg-primary">
+            <nav class="navbar navbar-expand-lg bg-white-50">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-white" href="#">Navbar</a>
+                    {/* <a class="navbar-brand text-white" href="#">Navbar</a> */}
+                    <img className='Logo' src={LOGO} alt="" />
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -25,13 +32,16 @@ export default function Header() {
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                            {/* <li class="nav-item">
                                 <a class="nav-link disabled text-white" aria-disabled="true">Disabled</a>
-                            </li>
+                            </li> */}
                         </ul>
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-danger" type="submit">Search</button>
+                            {/* <button class="btn btn-danger h-btn"  onClick={goLogin} type="submit">Login
+                            </button> */}
+                            {/* <button class="btn btn-danger"  onClick={goSign} type="submit">SignUp
+                            </button> */}
+                        
                         </form>
                     </div>
                 </div>

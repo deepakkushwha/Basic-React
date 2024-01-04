@@ -1,6 +1,46 @@
 .card {
 
-    width: 300px;
+    width: 400px;
+}
+.Logo{
+    width: 100px;
+}
+.close-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.head {
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+
+
+}
+
+h2 {
+    text-align: center;
+
+}
+
+p {
+    font-weight: 600;
+    color: #c9c9cb;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+
+    background-image: url(./businessman-3210932_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .Login-body {
@@ -8,12 +48,64 @@
     justify-content: center;
     align-items: center;
     text-align: left;
-    height: 90vh;
+    height: 550px;
+
+
 }
-.card{
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+.card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+
 }
-.button-group{
+
+.card-body {
+    color: #c9c9cb;
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #c9c9cb;
+        /* color: #dee2e6; */
+        /* color: rgb(235, 232, 232); */
+        font-weight: 600;
+    }
+
+}
+
+.button-group {
     display: flex;
-    justify-content: space-between;
+    text-align: right;
+
+
+    .danger {
+        background-color: rgb(247, 107, 82);
+        border-radius: 4px;
+        width: 175px;
+        font-weight: 500;
+        margin-right: 15px;
+        color: #fff;
+    }
+
+    .primary {
+        background-color: rgb(75, 78, 250);
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 500;
+        width: 175px;
+
+    }
+}
+
+.h-btn {
+    margin-right: 10px;
+}
+
+.last-line {
+    text-align: center;
+    margin: 20px;
+    font-size: 12px;
+
+    span {
+        color: rgb(11, 103, 242);
+    }
 }
