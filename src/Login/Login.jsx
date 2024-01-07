@@ -1,16 +1,9 @@
 import React, { useState } from 'react';
 export default function Login() {
-    // const [ form,setform ] = useState({});
     const [ name,setName ] = useState('');
     const [ email,setEmail ] = useState('');
     const [ number,setNumber ] = useState('');
     const [ checkSubmit,setcheckSubmit ] = useState(false);
-
-
-    // const setdata=(e,type)=>{
-    //     type=="name" ?  console.log("name") :  type=="health" ? console.log("email") : console.log('Health');
-    //   }
-
     const formSubmit =(e)=>{
     e.preventDefault();
     setcheckSubmit(true);

@@ -1,3 +1,9 @@
+
+/* Or for specific elements */
+h1, p {
+  font-family: 'Mulish', sans-serif;
+}
+
 .App {
   text-align: center;
 }

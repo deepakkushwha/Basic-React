@@ -50,7 +50,9 @@ export default function Location() {
                     <div class="mt-3 mb-3">
                       <label>Area Pin Code</label>
                       <input name={pincode} value={pincode} onChange={(e) => setPincode(e?.target?.value)} type="address" class="form-control" placeholder='Pincode' id="exampleInputEmail1" aria-describedby="emailHelp" />
-                      <div className='location-icon'><FontAwesomeIcon icon={faLocationDot} style={{ color: "#c3c6d1", }} /></div>
+                      <div className='location-icon'>
+                        <FontAwesomeIcon icon={faLocationDot} style={{ color: "#c3c6d1", }} />
+                        </div>
 
                     </div>
                     <h4>Proposer Self Details</h4>
